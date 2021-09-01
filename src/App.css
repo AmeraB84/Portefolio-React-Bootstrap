@@ -1,0 +1,363 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root {
+  --primery-white: #fff;
+  --primery-orange: #f9ab00;
+  --primery-dark: rgba(255, 255, 255, 0);
+  --primery-red: #ef4035;
+  --primery-hover-red: #f33501;
+}
+
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+/***********************************************NavBar******************************************************************/
+
+nav {
+  z-index: 2;
+}
+
+.logo {
+  width: 15rem;
+  height: 12rem;
+}
+
+@media (max-width:760px) {
+  .logo {
+    width: 10rem;
+    height: 8rem;
+  }
+}
+
+/******************Links NavBar*********************************************************************************/
+
+nav a.nav-link {
+  font-weight: 300;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+@media (max-width:760px) {
+  nav a.nav-link {
+    font-size: 0.7rem;
+  }
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav li a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primery-white) !important;
+  border-top: 0.1875rem solid var(--primery-dark);
+}
+
+.navbar-nav li a.active:focus {
+  border-top: 0.1875rem solid var(--primery-orange);
+  color: var(--primery-orange) !important;
+}
+
+.navbar-nav li a:hover {
+  border-top: 0.1875rem solid var(--primery-orange);
+}
+
+/******************Header********************************/
+
+.header-wraper {
+  position: relative;
+  background: url(photo-1496181133206-80ce9b88a853.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.min-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  color: var(--primery-orange);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.min-info h1 {
+  font-size: 31px;
+}
+
+@media (max-width:760px) {
+  .min-info h1 {
+    font-size: 1.2rem !important;
+  }
+}
+
+/**************Typed text*************************************/
+
+.typed-text {
+  font-size: 1.5rem;
+  color: var(--primery-white);
+  margin-bottom: 10px;
+}
+
+@media (max-width:760px) {
+  .typed-text {
+    font-size: 1rem !important;
+  }
+}
+
+/***********Header main offer button**********************/
+
+.btn-min-offer {
+  border: 1px solid var(--primery-orange);
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 12px 12px 12px;
+  text-decoration: none;
+  color: var(--primery-white);
+}
+
+.btn-min-offer:hover {
+  background-color: var(--primery-hover-red);
+  text-decoration: none;
+  color: var(--primery-white);
+  transition: .2s ease-in-out;
+}
+
+/****************Particles******************************/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+}
+
+@media (max-width:760px) {
+  .particles-canvas {
+    display: none;
+  }
+}
+
+/****************About me **************************************/
+
+/**.imgAB
+{
+  height: 500px;
+  width: 50px;
+}*/
+
+@media (max-width:760px) {
+  .imgAB {
+    height: 250px;
+  }
+}
+
+.titreAB {
+  font-family: "Roboto Condensed" sans-serif;
+  color: var(--primery-orange);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+@media (max-width:760px) {
+  .titreAB {
+    font-size: 20px;
+  }
+}
+
+.text-AB {
+  font-family: 'Times New Roman', Times, 'sans serif';
+  font-size: 20px;
+  padding-top: 55px;
+  padding-left: 10px;
+}
+
+@media (max-width:760px) {
+  .text-AB {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*********************Contact*******************************************************/
+
+.Contact {
+  margin-top: 50px;
+  font-family: "Roboto Condensed" sans-serif;
+  font-size: 18px;
+  color: var(--primery-orange);
+}
+
+.MessageC {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: var(--primery-orange);
+}
+
+.Button {
+  font-family: 'Times New Roman', Times, 'sans serif';
+  background-color: white;
+  border: 1px solid var(--primery-orange);
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primery-orange);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width:760px) {
+  .Contact {
+    font-size: 15px;
+  }
+  .MessageC {
+    font-size: 16px;
+  }
+  .Button {
+    font-size: 15px;
+  }
+}
+
+/************Confirmation contact *******************************/
+
+.GoHome {
+  color: var(--primery-orange);
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.GoHome:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.Marge {
+  margin-top: 100px;
+}
+
+/***************COMPETENCES******************************************/
+.image {
+  height: 90vh;
+  width: 70vh;
+  border: 1px #d8dfe3 solid;
+ 
+}
+.titreC {
+  color:  var(--primery-orange);
+  font-family: "Roboto Condensed" sans-serif;
+  font-size: 40px;
+  
+}
+.texteC {
+  font-family: 'Times New Roman', Times, 'sans serif';
+  font-size: 20px;
+}
+.bC {
+  font-family: 'Times New Roman', Times, 'sans serif';
+  background-color: white;
+  border: 1px solid var(--primery-orange);
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primery-orange);
+  font-size: 18px;
+  margin-top: 20px;
+}
+.itemC{
+  color: var(--primery-orange);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.Bar {
+  width: 80% !important;
+  height: 5px !important;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.itemC1 {
+  color: var(--primery-orange);
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+@media (max-width:760px) {
+  .itemC1{
+    font-size: 10px; 
+  }
+  .itemC{
+    font-size: 10px; 
+  }  
+  .texteC{
+    font-size: 12px;
+  }
+  .titreC{
+    font-size: 20px;
+  }
+  .image{
+    height: 50vh;
+    width: 40vh;
+  }
+  .bC {
+    font-size: 10px; 
+    padding: 7px 15px;
+  }
+}
