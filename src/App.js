@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import ConfirContact from './components/ConfirContact';
 import Competences from './components/Competences';
+import Experiences from './components/Experiences';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/contactme" component={Contact} />
           <Route path="/competences" component={Competences} />
+          <Route path="/realisations" component={Experiences} />
           <Route path="/confirmContact" component={ConfirContact} />
         </Switch>
       </ BrowserRouter >

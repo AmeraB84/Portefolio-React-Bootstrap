@@ -1,6 +1,5 @@
 import React from 'react'
 import { jsPDF } from "jspdf";
-import Button from 'react-bootstrap/Button'
 import cv from '../CV-IMG.png'
 
 function Competences() {
@@ -63,6 +62,11 @@ function Competences() {
                     <div className="progress Bar">
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
                             style={{ "width": "75%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">ANGULAR</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "75%" }} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <h5 className="itemC">DIVRES</h5>
                     <h4 className="itemC1">PYTHON</h4>
