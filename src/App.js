@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Route,BrowserRouter, Switch } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import CookieConsent from "react-cookie-consent";
 import NavBar from './components/NavBar'
 import Header from './components/Header'
 import AboutMe from './components/AboutMe';
@@ -8,11 +9,15 @@ import Contact from './components/Contact';
 import ConfirContact from './components/ConfirContact';
 import Competences from './components/Competences';
 import Experiences from './components/Experiences';
+import Cookies from './components/Cookies';
+import PolitiqueConfidentialite from './components/PolitiqueConfidentialite';
+import Mentionslegales from './components/Mentionslegales';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-    <NavBar />
+      <NavBar />
       < BrowserRouter >
         <Switch>
           <Route exact path="/" component={Header} />
@@ -21,8 +26,23 @@ function App() {
           <Route path="/competences" component={Competences} />
           <Route path="/realisations" component={Experiences} />
           <Route path="/confirmContact" component={ConfirContact} />
+          <Route path="/cookies" component={Cookies} />
+          <Route path="/mentionslegales" component={Mentionslegales} />
+          <Route path="/politiquedeconfidentialite" component={PolitiqueConfidentialite} />
         </Switch>
       </ BrowserRouter >
+      <Footer/>
+      <CookieConsent 
+      enableDeclineButton 
+      flipButtons
+      buttonText="Accepter"
+      declineButtonText="Refuser"
+      location='top'
+
+      >
+      En cliquant sur "Accepter", vous consentez à l'utilisation de Cookies ou autres traceurs permettant de réaliser des statistiques 
+      de visites. <a href='/cookies' target='_blank'>En savoir plus</a>
+      </CookieConsent>
 
     </>
   );

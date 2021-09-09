@@ -9,7 +9,7 @@ import portefolio from '../portefolio.png'
 function Experiences() {
     return (
         <div>
-            <Carousel variant="dark" className="container mt-3 carousell">
+            <Carousel variant="dark" className="container mt-3 carousell mb-3">
                 <Carousel.Item className="Slide">
                     <div className="row ImgC text-center mt-3">
                     <img

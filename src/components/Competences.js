@@ -37,6 +37,11 @@ function Competences() {
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
                             style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
+                    <h4 className="itemC1">PYTHON</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                     <h5 className="itemC">FRONT-END</h5>
                     <h4 className="itemC1">HTLM</h4>
                     <div className="progress Bar">
@@ -69,11 +74,6 @@ function Competences() {
                             style={{ "width": "75%" }} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <h5 className="itemC">DIVRES</h5>
-                    <h4 className="itemC1">PYTHON</h4>
-                    <div className="progress Bar">
-                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
-                            style={{ "width": "50%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
                     <h4 className="itemC1">WINDOWS</h4>
                     <div className="progress Bar">
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
@@ -87,7 +87,7 @@ function Competences() {
                 </div>
                 <div className="col-md-6 text-center">
                     <div> <img src={cv} alt="Mon CV" className="image mt-4" /></div>
-                    <button className='bC mt-4' onClick={Telecharger}>Télécharger CV</button>
+                    <button className='bC mt-4 mb-3' onClick={Telecharger}>Télécharger CV</button>
                 </div>
 
             </div>

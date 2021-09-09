@@ -18,7 +18,7 @@ const Header = () => {
                         shape: {
                             type: 'circle',
                             stroke: {
-                                width: 4,
+                                width: 6,
                                 color: '#f9ab00',
                             }
                         }
