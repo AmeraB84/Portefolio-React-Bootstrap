@@ -8,7 +8,7 @@ function Cookies() {
                 l’usage des informations de navigation traitées à l’occasion de votre consultation sur le site internet
                 <a href="www.amera-boudia.com" className='lienC mb-3'> www.amera-boudia.com</a>.</h5>
             <p>Lors de votre consultation du site, des informations relatives à votre navigation sont susceptibles d’être enregistrées dans des fichiers appelés
-                « Cookies » installés sur votre terminal (ordinateur, tablette, smartphone, etc.).</p>
+                « Cookies » installés sur votre terminal peut importe (ordinateur, tablette, smartphone, etc.).</p>
             <p>Un cookie est un petit fichier contenant diverses informations textuelles. Il est déposé sur votre terminal (ordinateur, tablette, smartphone, etc.)
                 via votre navigateur, par le site web que vous visitez.</p>
             <p>Les différents types de cookies :</p>
