@@ -10,7 +10,7 @@ function Cookies() {
             <p>Lors de votre consultation du site, des informations relatives à votre navigation sont susceptibles d’être enregistrées dans des fichiers appelés
                 « Cookies » installés sur votre terminal peut importe (ordinateur, tablette, smartphone, etc.).</p>
             <p>Un cookie est un petit fichier contenant diverses informations textuelles. Il est déposé sur votre terminal (ordinateur, tablette, smartphone, etc.)
-                via votre navigateur, par le site web que vous visitez.</p>
+                via votre navigateur, par le site web que vous visitez.!!!!!!</p>
             <p>Les différents types de cookies :</p>
             <ul className='liste mb-5'>
                 <li className='lienC'>Les cookies essentiels :</li>
