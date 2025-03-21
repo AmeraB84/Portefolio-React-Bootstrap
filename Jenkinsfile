@@ -1,8 +1,11 @@
 pipeline {
   environment {
-    dockerimagename = "bravinwasike/react-app"
-    dockerImage = "amerab/portfolio"
+    dockerimagename = "amerab/portfolio"
+    dockerImage = ""
   }
+  tools {
+      docker "docker"
+    }
   agent any
   stages {
     stage('Checkout Source') {
