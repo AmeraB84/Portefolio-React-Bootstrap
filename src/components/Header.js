@@ -30,7 +30,7 @@ const Header = () => {
                     <h1>Développement sites web et mobiles pour vos projets</h1>
                     <Typed
                         className='typed-text'
-                        strings={["Site vitrine", "site e-commerce", "développement frontend et/ou backend"]}
+                        strings={["Site vitrine", "site e-commerce", "Automatisation usine logicielle"]}
                         typeSpeed={40}
                         backSpeed={50}
                         loop
