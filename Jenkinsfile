@@ -1,7 +1,7 @@
 pipeline {
   environment {
     dockerimagename = "bravinwasike/react-app"
-    dockerImage = ""
+    dockerImage = "amerab/portfolio"
   }
   agent any
   stages {
