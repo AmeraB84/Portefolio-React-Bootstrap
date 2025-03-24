@@ -16,7 +16,7 @@ pipeline {
         git 'https://github.com/AmeraB84/Portefolio-React-Bootstrap.git'
       }
     }
-  docker.withTool('Docker'){
+  Docker.withTool('Docker'){
       docker.withRegistry('https://registry.hub.docker.com', registryCredential) { 
         environment {
         registryCredential = 'dockerhub-credentials'
