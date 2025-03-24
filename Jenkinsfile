@@ -1,7 +1,9 @@
 pipeline {
   environment {
-    dockerimagename = "amerab/portfolio"
-    dockerImage = ""
+      PROJECT_ID = 'watchful-goods-453607-a5'
+      CLUSTER_NAME = 'test'
+      LOCATION = 'europe-west1'
+      CREDENTIALS_ID = 'My Fist Project'
   }
   tools {
       docker "docker"
@@ -32,13 +34,10 @@ pipeline {
         }
       }
     }
-    stage('Deploying React.js container to Kubernetes') {
-      steps {
-        script {
-          kubernetesDeploy(configs: "./k8s/deployment.yaml", 
-                                         "./k8s/service.yaml")
+    stage('Deploy to GKE') {
+        steps{
+            step([$class: 'KubernetesEngineBuilder', projectId: env.PROJECT_ID, clusterName: env.CLUSTER_NAME, location: env.LOCATION, manifestPattern: '/k8s/', credentialsId: env.CREDENTIALS_ID, verifyDeployments: true])
         }
-      }
     }
   }
 }
