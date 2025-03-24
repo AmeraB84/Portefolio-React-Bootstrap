@@ -5,9 +5,6 @@ pipeline {
       LOCATION = 'europe-west1'
       CREDENTIALS_ID = 'My Fist Project'
   }
-  tools {
-      docker "docker"
-    }
   agent any
   stages {
     stage('Checkout Source') {
