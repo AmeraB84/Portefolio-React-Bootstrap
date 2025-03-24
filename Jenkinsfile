@@ -7,7 +7,7 @@ pipeline {
       dockerimagename = 'amerab/portfolio'
   }
   tools {
-  'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker'
+  'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'Docker'
   }
   agent any
   stages {
@@ -16,7 +16,7 @@ pipeline {
         git 'https://github.com/AmeraB84/Portefolio-React-Bootstrap.git'
       }
     }
-  docker.withTool('docker'){
+  docker.withTool('Docker'){
       docker.withRegistry('https://registry.hub.docker.com', registryCredential) { 
         environment {
         registryCredential = 'dockerhub-credentials'
@@ -24,7 +24,7 @@ pipeline {
         stage('Build image') {
           steps{
             script {
-              dockerImage = docker.build dockerimagename
+              dockerImage = Docker.build dockerimagename
             }
           }
       }
