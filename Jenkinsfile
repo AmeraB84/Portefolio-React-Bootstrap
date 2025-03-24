@@ -6,6 +6,9 @@ pipeline {
       CREDENTIALS_ID = 'My Fist Project'
       dockerimagename = 'amerab/portfolio'
   }
+  tools {
+  'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'Docker'
+  }
   agent any
   stages {
     stage('Checkout Source') {
@@ -13,25 +16,28 @@ pipeline {
         git 'https://github.com/AmeraB84/Portefolio-React-Bootstrap.git'
       }
     }
-    stage('Build image') {
-      steps{
-        script {
-          dockerImage = docker.build dockerimagename
-        }
-      }
-    }
-    stage('Pushing Image') {
-      environment {
-          registryCredential = 'dockerhub-credentials'
-           }
-      steps{
-        script {
-          docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
-            dockerImage.push("latest")
+  docker.withTool('Docker'){
+      docker.withRegistry('https://registry.hub.docker.com', registryCredential) { 
+        environment {
+        registryCredential = 'dockerhub-credentials'
           }
-        }
+        stage('Build image') {
+          steps{
+            script {
+              dockerImage = docker.build dockerimagename
+            }
+          }
       }
-    }
+        stage('Pushing Image') {
+          steps{
+            script {
+              dockerImage.push("latest")
+            }
+          }
+        } 
+      }
+  }
+  
     stage('Deploy to GKE') {
         steps{
             step([$class: 'KubernetesEngineBuilder', projectId: env.PROJECT_ID, clusterName: env.CLUSTER_NAME, location: env.LOCATION, manifestPattern: '/k8s/', credentialsId: env.CREDENTIALS_ID, verifyDeployments: true])
