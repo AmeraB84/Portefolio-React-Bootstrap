@@ -4,6 +4,7 @@ pipeline {
       CLUSTER_NAME = 'test'
       LOCATION = 'europe-west1'
       CREDENTIALS_ID = 'My Fist Project'
+      dockerimagename = 'amerab/portfolio'
   }
   agent any
   stages {
