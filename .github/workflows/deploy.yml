@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3 
       - name: Install dependencies 
-        run: npm install 
+        run: npm install --legacy-peer-deps
       - name: Build React app 
         run: npm run build
       - name: Upload to OVH hosting via FTP 
