@@ -1,6 +1,7 @@
 import React from 'react'
 import { jsPDF } from "jspdf";
 import cv from '../CV-IMG.png'
+import cv1 from '../CV-IMG1.png'
 
 function Competences() {
 
@@ -9,6 +10,8 @@ function Competences() {
         var width = doc.internal.pageSize.getWidth();
         var height = doc.internal.pageSize.getHeight();
         doc.addImage(cv, 'PNG', 0, 0, width, height)
+        doc.addPage();
+        doc.addImage(cv1, 'PNG', 0, 0, width, height)
         doc.save("CV-BOUDIA-Amera.pdf");
     }
     return (
@@ -42,7 +45,7 @@ function Competences() {
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
                             style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h5 className="itemC">FRONT-END</h5>
+                    <h5 className="itemC pt-3">FRONT-END</h5>
                     <h4 className="itemC1">HTLM</h4>
                     <div className="progress Bar">
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
@@ -73,7 +76,7 @@ function Competences() {
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
                             style={{ "width": "75%" }} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h5 className="itemC">DIVRES</h5>
+                    <h5 className="itemC pt-3">SYSTEMES</h5>
                     <h4 className="itemC1">WINDOWS</h4>
                     <div className="progress Bar">
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
@@ -82,11 +85,61 @@ function Competences() {
                     <h4 className="itemC1">LINUX</h4>
                     <div className="progress Bar">
                         <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "70%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5 className="itemC pt-3">CI / CD</h5>
+                    <h4 className="itemC1">DOCKER</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "80%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">KUBERNETES</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
                             style={{ "width": "60%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">ARGOCD</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "60%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">HELM</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "50%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">JENKINS</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">GITLAB-CI</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">KUSTOMIZE</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "50%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5 className="itemC pt-3">CLOUD</h5>
+                    <h4 className="itemC1">GCP</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 className="itemC1">AZURE</h4>
+                    <div className="progress Bar">
+                        <div className="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                            style={{ "width": "40%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
                 <div className="col-md-6 text-center">
-                    <div> <img src={cv} alt="Mon CV" className="image mt-4" /></div>
+                    <div> 
+                        <img src={cv} alt="Mon CV" className="image mt-4" />
+                        <img src={cv1} alt="Mon CV" className="image mt-4" />
+                    </div>
                     <button className='bC mt-4 mb-3' onClick={Telecharger}>Télécharger CV</button>
                 </div>
 

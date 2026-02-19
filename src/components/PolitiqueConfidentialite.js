@@ -45,7 +45,7 @@ function PolitiqueConfidentialite() {
             <p className='para15'>Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 (art. 34), vous disposez d’un droit d’accès, de modification,
                 de rectification et de suppression des données qui vous concernent. Pour exercer
                 ce droit, vous pouvez me contacter par mail à l’adresse amera.boudia84@gmail.com ou par courrier à l’adresse :</p>
-            <h5 className='adresseP text-center mt-3 mb-4'>Mlle Amera BOUDIA 88 avenue Gabriel Péri ARGENTEUIL </h5>
+            <h5 className='adresseP text-center mt-3 mb-4'>Mlle Amera BOUDIA 3 avenue du camp long Cannes </h5>
             <p className='para16'>Conformément à la réglementation en vigueur, votre demande doit être signée et accompagnée de la photocopie d’un titre d’identité portant votre signature et préciser l’adresse à laquelle doit vous parvenir la réponse. Une réponse vous sera
                 alors adressée dans un délai de 2 mois suivant la réception de la demande.</p>
             <p className='para17'>La sécurité de vos Données personnelles est très importante pour moi. Les données personnelles recueillies sur le site www.amera-boudia.com sont traitées selon des protocoles sécurisés qui limitent
@@ -55,7 +55,7 @@ function PolitiqueConfidentialite() {
             <p className='para19'>Dans la limite de ce qui est autorisé par les lois en vigueur je décline toute responsabilité en cas de dommage direct ou indirect, des pertes, coûts, que ce soit contractuelle, délictuelle, y compris par négligence, que vous pourriez subir en cas d’accès non autorisé,
                 de perte ou d’altération de vos données personnelles.</p>
                 <div className='footerP'>
-                    <h5 className=' text-center mt-3 mb-4 adresseP'>© Copyright 2021 - Amera BOUDIA. Tous droits réservés.</h5>
+                    <h5 className=' text-center mt-3 mb-4 adresseP'>© Copyright 2025 - Amera BOUDIA. Tous droits réservés.</h5>
                 </div>
 
         </div>

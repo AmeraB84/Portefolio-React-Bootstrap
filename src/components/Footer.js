@@ -3,7 +3,7 @@ import { AiFillLinkedin } from 'react-icons/ai'
 function Footer() {
     return (
         <div className='row footer text-center'>
-            <div className='col-6 mt-3 ml'>
+            <div className='col-6 mt-3'>
                 <a href="/mentionslegales" target='_blank'>Mentions légales</a><br />
                 <a href="/politiquedeconfidentialite" target='_blank'>CGU</a>
             </div>

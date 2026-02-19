@@ -27,10 +27,10 @@ const Header = () => {
                 }} />
             <div className="header-wraper">
                 <div className="min-info">
-                    <h1>Développement sites web et mobiles pour vos projets</h1>
+                    <h2>Automatisatiser la gestion de vos applications , du développement jusqu'au déploiement en continu on promise ou en cloud</h2>
                     <Typed
                         className='typed-text'
-                        strings={["Site vitrine", "site e-commerce", "Automatisation usine logicielle"]}
+                        strings={["Site vitrine", "site e-commerce", "Automatiser le deploiement des applications conteneurisés"]}
                         typeSpeed={40}
                         backSpeed={50}
                         loop

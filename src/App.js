@@ -20,7 +20,6 @@ function App() {
       <NavBar />
       < BrowserRouter >
         <Switch>
-          <Route exact path="/" component={Header} />
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/contactme" component={Contact} />
           <Route path="/competences" component={Competences} />
@@ -29,9 +28,10 @@ function App() {
           <Route path="/cookies" component={Cookies} />
           <Route path="/mentionslegales" component={Mentionslegales} />
           <Route path="/politiquedeconfidentialite" component={PolitiqueConfidentialite} />
+          <Route exact path="/" component={Header} />
         </Switch>
-      </ BrowserRouter >
-      <Footer/>
+      </BrowserRouter >
+      <Footer />
       <CookieConsent 
       enableDeclineButton 
       flipButtons

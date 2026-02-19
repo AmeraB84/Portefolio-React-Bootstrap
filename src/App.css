@@ -189,15 +189,17 @@ nav ul li {
 
 /****************About me **************************************/
 
-/**.imgAB
+.imgAB
 {
-  height: 500px;
-  width: 50px;
-}*/
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
 
 @media (max-width:760px) {
   .imgAB {
-    height: 250px;
+    height: auto;
+    width: 50px;
   }
 }
 
@@ -207,7 +209,7 @@ nav ul li {
   text-align: center;
   text-transform: uppercase;
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media (max-width:760px) {
@@ -544,6 +546,8 @@ nav ul li {
 .footer {
   background-color: black;
   height: 100px;
+  bottom: 0;
+  width: 100%;
 }
 
 .ml a {

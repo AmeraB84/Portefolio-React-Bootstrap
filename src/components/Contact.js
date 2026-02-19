@@ -10,10 +10,10 @@ function Contact() {
     const history = useHistory();
     const Envoyer = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_jwfzny6',
-            'template_9hvmnf3',
+        emailjs.sendForm('service_hf4jx2i',
+            'template_vyqdpcf',
             e.target,
-            "user_F3PIDKMllej8RGWPWJvqx"
+            "v7M9z2bVH_LiBVuka"
         ).then(res => {
             console.log(res);
             history.push('/confirmContact');
