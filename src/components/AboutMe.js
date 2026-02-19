@@ -7,7 +7,7 @@ const AboutMe = () => {
             <h3 className="titreAB text-center">A propos de moi </h3>
             <div className="row">
                 <img src={photocv} alt="MaPhoto" className="imgAB col-md-4 h-auto"></img>
-                <p className="text-AB col-md-7">Hello ! je suis amera , ingénieur devops spécialisée dans le développement informatique des applications et le deploiement en cloud.<br />
+                <p className="text-AB col-md-7">Hello !! je suis amera , ingénieur devops spécialisée dans le développement informatique des applications et le deploiement en cloud.<br />
                     Mon parcours est assez atypique , après l'obtention de mon diplôme d’ingénieur en Algérie , je me suis installée en France et pour des raisons familiales et
                     financières je n’ai pas pu travailler dans le domaine de l’informatique.<br/>
                     Mon parcours professionnel est très variée , j’ai exercée dans plusieurs domaines;
