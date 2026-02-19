@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3 
       - name: Upload to OVH hosting via FTP 
-        uses: SamKirkland/FTP-Deploy-Action@v4 
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4 
         with: 
           server: ${{ secrets.FTP_SERVER }} 
           username: ${{ secrets.FTP_USERNAME }} 
