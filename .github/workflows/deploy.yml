@@ -12,7 +12,9 @@ jobs:
       - name: Install dependencies 
         run: npm install --legacy-peer-deps
       - name: Build React app 
-        run: npm run build
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          npm run build
       - name: Upload to OVH hosting via FTP 
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4 
         with: 
