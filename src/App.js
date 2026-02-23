@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import { Route, BrowserRouter, Switch , HashRouter} from 'react-router-dom'
 import CookieConsent from "react-cookie-consent";
 import NavBar from './components/NavBar'
 import Header from './components/Header'
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <NavBar />
-      < BrowserRouter >
+      <HashRouter>
         <Switch>
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/contactme" component={Contact} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/politiquedeconfidentialite" component={PolitiqueConfidentialite} />
           <Route exact path="/" component={Header} />
         </Switch>
-      </BrowserRouter >
+      </HashRouter>
       <Footer />
       <CookieConsent 
       enableDeclineButton 
