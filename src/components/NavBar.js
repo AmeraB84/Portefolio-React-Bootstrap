@@ -3,6 +3,7 @@ import AB from '../AB.png'
 import '../App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
@@ -16,10 +17,10 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href='/'>Accueil</a>
+                            <Link className="nav-link active" aria-current="page" to='/'>Accueil</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href='/aboutme'>A propos de moi</a>
+                            <Link className="nav-link active" aria-current="page" to='/aboutme'>A propos de moi</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link active" href='/competences'>Mes compétences</a>
